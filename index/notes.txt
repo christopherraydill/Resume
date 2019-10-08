@@ -1,0 +1,84 @@
+update ico image and png for visual identity
+make advanced dropdowns X
+add all comment's 
+have all connections in the navigation line up. 
+ref all css pictures and js scripts 
+noscript 
+tech.html: All my tech likes.
+contact.html: Contact me, for help. 
+helping-hand.html: Help with the code. 
+christopher dill - title of page - better color on text
+check teachers notes
+my-summer-page.html: what I did in the summer.
+navigation responsive
+out of focus of nav parts goes and hides
+easy to see colors
+
+final.html
+Uncharted 4: A Thief`s End $59.99
+Overwatch $59.99
+Forza Horizon 3 $59.99
+
+All items will be loaded using a JSON object
+
+<button id="myBtn" onclick="myFunction()">Try it</button>
+var x = document.getElementById("myBtn").getAttribute("onclick");
+
+h1
+Video Game Emporium
+h1
+box
+title id title
+img
+p
+discription
+p
+h3
+In Stock: stock Price: price
+h3
+button
+Add to Cart
+button
+box
+
+Game 1 Price 2 Quantity 3 Total 4
+Bottom Border
+
+index.html 
+Social Media
+Featered changes
+Better Intruduction
+Hogwarts a History changes
+Chapter Selection Box
+nav control
+
+about.html
+more 
+Anime
+Exercise
+Music
+Blacksmithing
+Books
+
+Photo Gallery
+More Photos
+About My Photo Gallery
+Introduction
+
+midterm.html
+reset
+bars and tab functions
+anamated flash/quiksilver
+
+my-form.html
+finsh my form.
+add in the stars.
+change to green
+double check validation.
+change required panel.
+
+address-book.html 
+Put code into countiner. 
+bigger font size.
+
+address-book-plus-hide-equals-minus.html

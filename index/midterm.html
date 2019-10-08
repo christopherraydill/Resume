@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>THE GREAT RACE!</title>
+		<link rel="shortcut icon" href="images/test-racer.ico">
+		<style>
+			html {
+				background-image: url("images/br-max.png");
+				background-repeat: no-repeat;
+			}
+
+			nav {
+				position: fixed;
+				top: 0;
+			}
+
+			ul {
+				float: left;
+			}
+
+			li {
+				list-style: none;
+				border: 1px solid green;
+				background-color: white;
+			}
+
+			nav.div {
+				float: left;
+			}
+
+			#setThePace {
+				position: fixed;
+				top: 0;
+				padding: 2px;
+			}
+
+			#setThePaceHidden {
+				position: fixed;
+				top: 24px;
+				left: 55px;
+				display: none;
+			}
+
+			#action {
+				position: fixed;
+				top: 0;
+				left: 150px;
+				padding: 2px;
+			}
+
+			#actionHidden {
+				position: fixed;
+				top: 22px;
+				left: 164px;
+				padding: 1px;
+				display: none;
+			}
+
+			#bets {
+				position: fixed;
+				top: 0;
+				left: 314px;
+				padding: 2px;
+			}
+
+			#betsHidden {
+				position: fixed;
+				top: 22px;
+				left: 318px;
+				padding: 2px;
+				display: none;
+			}
+
+			#sides {
+				position: fixed;
+				top: 0;
+				left: 428px;
+				padding: 2px;
+			}
+
+			#sidesHidden {
+				position: fixed;
+				top: 22px;
+				left: 434px;
+				padding: 2px;
+				display: none;
+			}
+
+			footer {
+				padding-top: 14px;
+			}
+
+			/* light */
+			.relativePic {
+				position:relative;
+				left: 1052px;
+				top: -70px;
+			}
+
+			/* racer1 position */
+			#racer1 {
+				position:relative;
+				left: 120px;
+				top: -160px;
+			}
+
+			/* racer2 position */
+			#racer2 {
+				position:relative;
+				left: 120px;
+				top: -154px;
+			}
+
+			/* place one */
+			#one {
+				position:relative;
+				left: 0px;
+				top: 0px;
+				left: 1335px;
+				top: -535px;
+			}
+
+			/* place two */
+			#two {
+				position:relative;
+				left: 1335px;
+				top: -535px;
+			}
+
+			/* the title*/
+			#bruceBanner {
+				position:relative;
+				left: 1365px;
+				top: -550px;
+			}
+
+			/*Winner*/
+			#theFinalWinner {
+				position: fixed;
+				margin: auto;
+				padding: 5px;
+				text-align: center;
+				top: 100px;
+				left: 100px;
+				right: 100px;
+				bottom: 100px;
+				display: none;
+				background-color: #4180b2;
+				color: #f6ee15;
+				min-width: 400px;
+				max-width: 400px;
+				max-height: 400px;
+				min-height: 450px;
+			}
+
+			//font and color
+			#winnerText {
+				text-align: center;
+				padding: 5px;
+				min-width: 400px;
+				max-width: 400px;
+			}
+
+			#goHome {
+				position: absolute;;
+				left: -45px;
+				top: -10px;
+				text-align: center;
+			}
+		</style>
+		<script src="jssss.js" type="text/javascript"></script>
+		<noscript>
+			JAVASCRIPT NOT FOUND
+		</noscript>
+	</head>
+	<body>
+		<main role="main">
+			<nav>
+				<div id="goHome">
+					<ul>
+						<li>
+							<a href="index.html">Go To<br />Home</a>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<ul>
+						<li OnClick="toggleSetThePace();" id="setThePace">Set Speed</li>
+						<div id="setThePaceHidden">
+							<li OnClick="changeSpeed(1);">Slow</li>
+							<li OnClick="changeSpeed(2);">Medium</li>
+							<li OnClick="changeSpeed(3);">Fast</li>
+							<li OnClick="changeSpeed(4);">Super</li>
+						</div>
+					</ul>
+				</div>
+				<div>
+					<ul>
+						<li OnClick="toggleAction();" id="action">Behind The Scenes</li>
+						<div id="actionHidden">
+							<li>Tips</li>
+							<li>Bloopers</li>
+							<li>Deleted Scenes</li>
+						</div>
+					</ul>
+				</div>
+				<div>
+					<ul>
+						<li OnClick="toggleBets();" id="bets">Place A Bet</li>
+						<div id="betsHidden">
+							<li>Flash</li>
+							<li>Quiksilver</li>
+						</div>
+					</ul>
+				</div>
+				<div>
+					<ul>
+						<li OnClick="toggleSides();" id="sides">Outfit Change</li>
+						<div id="sidesHidden">
+							<li>Shadow</li>
+							<li>Reverse</li>
+							<li>Swap Color</li>
+						</div>
+					</ul>
+				</div>
+			</nav>
+			<article role="article">
+        <header role="banner"></header>
+        <section class="relativePic">
+					<p><img onclick="lit();" id="idPlease" src="images/red-for-stop.png" width="323" height="350" alt=""/></p>
+				</section>
+				<section id="racer1">
+					<p><img src="images/runner-flash-start.png" width="100" height="100" alt="The Flash"/></p>
+				</section>
+				<section id="racer2">
+					<p><img id="idPlease" src="images/runner-quiksilver-start.png" width="100" height="100" alt="Quiksilver"/></p>
+				</section>
+				<section id="bruceBanner">
+					<p>Flash Vs. Quiksilver</p>
+				</section>
+				<section id="one">
+					<p id="firstPlace">1. </p>
+				</section>
+				<section id="two">
+					<p id="secondPlace">2. </p>
+				</section>
+			</article>
+			<div id="theFinalWinner">
+				<h1 id="winnerText">The Winner</h1>
+				<img onclick="disappear();" src="images/runner-flash-start.png" alt="The Flash" width="380px" id="changeWinner"/>
+			</div>
+		</main>
+
+		<footer role="cantentinfo">
+		  <p>Copyright &copy; 2016 Christopher Dill, All rights reserved.</p>
+		</footer>
+
+	</body>
+</html>

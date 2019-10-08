@@ -1,0 +1,134 @@
+/*
+   Joshua Ratliff Great race style sheet
+   Filename: styles2.css
+
+   Author:   Joshua Ratliff
+   Date:     10/10/2016
+ */
+
+ html {
+    font-size: 20px;
+    background: #AFFD6C;
+    background-image:url("images/mariobackground.png");
+    width: auto;
+    height: auto;
+    max-width: 1550px;
+    min-width: 1550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+ body, footer, header, h1, h2, img, li, nav, p {
+    border: 0;
+    padding: 0;
+    margin: 0;
+ }
+ /* navigation */
+ nav {
+ 	color: #FFFFFF;
+ 	text-align: center;
+ 	position: relative;
+ }
+ nav li {
+    margin: 0.3em 0.5em;
+    display: inline-block;
+    font-size: 1.5em;
+    line-height: 1.4em;
+ }
+ nav a:link {
+    text-decoration: none;
+    color: white;
+ }
+ nav a:visited {
+    color: #ECB153;
+ }
+ nav a:hover, nav a:focus {
+    color: #336975;
+ }
+ nav a:active {
+ 	font-size: 1.5em;
+ 	text-shadow: 5px 5px black;
+ }
+ h1 {
+ 	Font-size: 50px;
+ 	text-align: center;
+ 	font-family: Bitter, "Times New Roman", Times, serif;
+ 	font-weight: 500;
+ }
+ h2 {
+   position: relative;
+ 	Font-size: 35px;
+ 	font-family: "Times New Roman", times, serif;
+ 	Text-align: left;
+ 	position: relative;
+ }
+
+ /* racers */
+ p.racers {
+    height: 50px;
+    width: 20px;
+    text-align: center; margin: 12em 0;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+.helper {
+    display: inline-block;
+    height: 50%;
+    vertical-align: middle;
+}
+ p.img {
+   height: 50px;
+   width: 20px;
+   position: relative;
+   left: 0px;
+   display: inline-block;
+   vertical-align: middle;
+ }
+/*footer*/
+.footerhelper{
+  float: left;
+  position: relative;
+  display: inline-block;
+  height: 50%;
+  vertical-align: middle;
+}
+
+#mario {
+  position: absolute;
+  top: 50px;
+  left: auto;
+}
+
+#peach {
+  position: absolute;
+  top: 100px;
+  left: auto;
+}
+
+#winnerImg {
+  position: absolute;
+  margin: auto;
+  padding: 5px;
+  text-align: center;
+  top: 100px;
+  left: 100px;
+  right: 100px;
+  bottom: 100px;
+  display: none;
+  background-color: green;
+  color: red;
+  min-width: 400px;
+  max-width: 400px;
+  max-height: 400px;
+  min-height: 450px;
+}
+
+#swapImg {
+  position: relative;
+  text-align: center;
+  top: 50px;
+}
+
+#theWinText {
+  text-align: center;
+}

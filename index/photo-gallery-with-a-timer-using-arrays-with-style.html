@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+	<head lang="en">
+		<!-- character encoding is utf eight -->
+    <meta charset="utf-8">
+    <!-- the description of this page -->
+    <meta name="description" content="Free Web tutorials">
+    <!-- keywords for search engine -->
+    <meta name="keywords" content="HTML,CSS,XML,JavaScriptS">
+    <!-- the authors name -->
+    <meta name="author" content="Dill Christopher">
+    <!-- refreshes page every ten minites -->
+    <meta http-equiv="refresh" content="600">
+    <!-- compatability with edge -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- sets the width of the page to follow the screen-width of the device and sets the initial zoom level when the page is first loaded by the browser -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- the title in the tab -->
+		<title>Introduction CD</title>
+
+		<!--
+			Web Dev 2 - photo-gallery.html
+			Filename: photo-gallery-timer-array-and-style.html
+
+			Author:   Christopher Dill
+			Date:     12/14/2016
+			CIS 131 Web Development II
+		-->
+		<link rel="shortcut icon" href="images/visual_identity-logo-0.8.ico">
+		<link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
+		<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+		<script>var __adobewebfontsappname__="dreamweaver"</script>
+		<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+			<![endif]-->
+		<!-- click and show image -->
+		<script src="js.js" type="text/javascript"></script>
+		<!-- timer/array -->
+		<script src="jsss.js" type="text/javascript"></script>
+		<!-- my toggle navigation -->
+		<script src="jssssss.js" type="text/javascript"></script>
+		<noscript>
+			JAVASCRIPT NOT FOUND
+		</noscript>
+	</head>
+
+	<body>
+		<!-- Main Container -->
+		<div class="container">
+		  <!-- Navigation -->
+			<header>
+				<a href="index.html">
+				<p class="logo"><img src="images/visual_identity-logo-0.8.png" alt="Christopher Ray Logo" width="30" class=""></p>
+				</a>
+				<nav>
+						<div id="theMainContent" class="dropdown">
+								<p class="dropbtn">MAIN CONTENT</p>
+								<div class="dropdown-content"><br />
+									<a href="index.html">HOME</a><br />
+									<a href="about.html">ABOUT</a><br />
+									<!-- <a href="">SUMMER FUN</a><br /> -->
+									<!-- <a href="">CONTACT</a><br /> -->
+								</div>
+						</div>
+						<div id="thePhoto" class="dropdown">
+								<p class="dropbtn">PHOTO GALLERY</p>
+								<div class="dropdown-content"><br />
+									<a href="photo-gallery.html">CLICK</a><br />
+									<a href="photo-gallery-with-timer.html">TIMER</a><br />
+									<a href="photo-gallery-with-a-timer-using-arrays-with-style.html" id="selectedYa">ARRAY/STYLE</a><br />
+								</div>
+						</div>
+						<div id="theRace" class="dropdown">
+								<p class="dropbtn">THE GREAT RACE</p>
+								<div class="dropdown-content"><br />
+									<a href="midterm.html">MIDTERM</a><br />
+									<a href="extra-credit.html">EXTRA CREDIT</a><br />
+
+								</div>
+						</div>
+						<div id="theForm" class="dropdown">
+								<p class="dropbtn">MY FORM AND ADDRESS BOOK</p>
+								<div class="dropdown-content"><br />
+									<a href="my-form.html">MY FORM VALIDATION</a><br />
+									<a href="address-book.html">MY ADDRESS BOOK</a><br />
+									<a href="address-book-plus-hide-equals-minus.html"> MY ADDRESS BOOK REVISITED </a><br />
+								</div>
+						</div>
+						<div id="theOther" class="dropdown">
+								<p class="dropbtn">OTHER</p>
+								<div class="dropdown-content"><br />
+									<a href="vue.html">SHOPPING CART</a><br />
+									<!-- <a href="techie-hobbies.html">MY TECHIE HOBBIES</a><br />
+									<a href="helping-hand.html">HELPING HAND</a><br /> -->
+								</div>
+						</div>
+				</nav>
+				<div class="theDisplay row">
+						<div id="" class="col-xs-12">
+								<button class="btn btn-default dropdown2" data-toggle="collapse" data-target="#demo">MAIN CONTENT
+								<div id="demo" class="collapse">
+									<a href="index.html">HOME</a><br />
+									<a href="about.html">ABOUT</a><br />
+									<!-- <a href="">SUMMER FUN</a><br /> -->
+									<!-- <a href="">CONTACT</a><br /> -->
+								</div>
+						</div>
+						<div id="" class="col-xs-12">
+								<button class="btn btn-default dropdown2" data-toggle="collapse" data-target="#demo2">PHOTO GALLERY
+								<div id="demo2" class="collapse"><br />
+									<a href="photo-gallery.html">CLICK</a><br />
+									<a href="photo-gallery-with-timer.html">TIMER</a><br />
+									<a href="photo-gallery-with-a-timer-using-arrays-with-style.html">ARRAY/STYLE</a><br />
+								</div>
+						</div>
+						<div id="" class="col-xs-12">
+								<button class="btn btn-default dropdown2" data-toggle="collapse" data-target="#demo3">THE GREAT RACE
+								<div id="demo3" class="collapse"><br />
+									<a href="midterm.html">MIDTERM</a><br />
+									<a href="extra-credit.html">EXTRA CREDIT</a><br />
+
+								</div>
+						</div>
+						<div id="" class="col-xs-12">
+								<button class="btn btn-default dropdown2" data-toggle="collapse" data-target="#demo4">MY FORM <br />AND<br /> ADDRESS BOOK
+								<div id="demo4" class="collapse"><br />
+									<a href="my-form.html">MY FORM<br />VALIDATION</a><br />
+									<a href="address-book.html">MY ADDRESS<br />BOOK</a><br />
+									<a href="address-book-plus-hide-equals-minus.html"> MY ADDRESS<br />BOOK <br /> REVISITED </a><br />
+								</div>
+						</div>
+						<div id="" class="col-xs-12">
+								<button class="btn btn-default dropdown2" data-toggle="collapse" data-target="#demo5">OTHER
+								<div id="demo5" class="collapse"><br />
+									<a href="vue.html">SHOPPING CART</a><br />
+									<!-- <a href="techie-hobbies.html">MY TECHIE HOBBIES</a><br />
+									<a href="helping-hand.html">HELPING HAND</a><br /> -->
+								</div>
+						</div>
+				</div>
+				<!-- 3.Primary CTA dropdown -->
+				<!--<div id="theTop" class="dropdown">
+					<div class="panel panel-default footer_banner theSizeWidth">
+						<p class="theTopButton dropbtn"><img src="images/blank1.png" alt="blank image" /><img src="images/blank1.png" alt="blank image" /><img src="images/blank1.png" alt="blank image" width="12.5" /><img src="images/blank1.png" alt="blank image" /><img src="images/redx.png" alt="red x image" /><img src="images/blank1.png" alt="blank image" /><img src="images/blank1.png" alt="blank image" width="12.5" /><img src="images/blank1.png" alt="blank image" /><img src="images/blank1.png" alt="blank image" /></p>
+						<div class="dropdown-content theMoveDown">
+							<a class="hero_header">FOR THE LATEST NEWS &amp; UPDATES</a>
+				      <a class=""><div class="button2 bg-primary">subscribe</div></a>
+						</div>
+					</div>
+				</div>-->
+		  </header>
+		  <div class="buttonYa col-xs-12">
+			  <button onclick="myBackColor()">Color</button>
+			  <button onclick="myHide()">Hide</button>
+			  <button onclick="myShow()">Show</button>
+			  <button onclick="myMove()">Move</button>
+		  </div>
+		  <!-- Hero Section -->
+		  <section class="hero" id="hero">
+			<h2 class="hero_header">CHRISTOPHER <span class="light">DILL</span></h2>
+			<p class="tagline">My Photo Gallery</p>
+		  </section>
+		  <!-- Parallax Section -->
+		  <section class="banner">
+			<h2 class="parallax">ABOUT MY PHOTO GALLERY/TIMER</h2>
+			<p class="parallax_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+		  </section>
+		  <!-- More Info Section -->
+		  <footer>
+			<article class="footer_column_top_img">
+			  <h3 id="dispName">V</h3>
+			  <div id="noSelectionImg">
+				<img onclick="stopTimer()" src="images/kurosaki-ichigo.jpg" alt="ichigo-kurosaki" width="800" height="400" class="cards" id="disPic"/>
+			  </div>
+				<p class="text-success">TIMER DURATION</p>
+			  <p id="timer" class="text-success">0</p>
+			</article>
+			<div class="foot_ctr">
+				<article class="footer_column">
+				  <h3>ANIME</h3>
+				  <div id="noSelectionImg">
+					<img src="images/kurosaki-ichigo.jpg" alt="ichigo-kurosaki" width="400" height="200" onclick="changeMe('images/kurosaki-ichigo.jpg', 'ANIME')" id="i-change" class="cards"/>
+				  </div>
+				</article>
+				<article class="footer_column">
+				  <h3>BLACKSMITHING</h3>
+				  <div id="noSelectionImg">
+					<img src="images/black-smith.jpg" alt="dwarf hitting a hammer" width="400" height="200"  onclick="changeMe('images/black-smith.jpg', 'BLACKSMITHING')" id="i-change" class="cards"/>
+				  </div>
+				</article>
+				<article class="footer_column">
+				  <h3>PROGRAMMING</h3>
+				  <div id="noSelectionImg">
+					<img src="images/pro-gram.jpg" alt="zeros and ones" width="400" height="200" onclick="changeMe('images/pro-gram.jpg', 'PROGRAMMING')" id="i-change" class="cards"/>
+				  </div>
+				</article>
+			</div>
+		  </footer>
+		  <!-- Footer Section -->
+		  <section class="footer_banner" id="contact">
+			<h2 class="hidden">Footer Banner Section </h2>
+			<p class="hero_header">FOR THE LATEST NEWS &amp; UPDATES</p>
+			<div class="button2" href="mailto:rayd1234567@gmail.com?Subject=Hello">email</div>
+		  </section>
+		  <!-- Copyrights Section -->
+		  <div class="copyright">&copy;2016 - <strong>Christopher Dill</strong></div>
+		</div>
+		<!-- Main Container Ends -->
+	</body>
+</html>

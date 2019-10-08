@@ -1,0 +1,19 @@
+var theExtraCredit = [{
+  "letter" : "C",
+  "letter2" : "C"
+},{
+  "letter" : "o",
+},{
+  "letter" : "n",
+},{
+  "letter" : "t",
+},{
+  "letter" : "a",
+},{
+  "letter" : "c",
+},{
+  "letter" : "t",
+},{
+  "letter" : "s",
+}
+];

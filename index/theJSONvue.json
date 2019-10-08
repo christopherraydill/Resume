@@ -1,0 +1,23 @@
+var theProduct = [{
+  "title" : "Uncharted 4: A Thief`s End",
+  "picture" : "images/uate.png",
+  "description" : "Several years after his last adventure, retired fortune hunter, Nathan Drake, is forced back into the world of thieves.  With the stakes much more personal, Drake embarks on a globe-trotting journey in pursuit of a historical conspiracy behind a fabled pirate treasure.  His greatest adventure will test his physical limits, his resolve, and ultimately what he’s willing to sacrifice to save the ones he loves.",
+  "stock" : "5",
+  "price" : "$59.99",
+  "button" : "1"
+},{
+  "title" : " Overwatch ",
+  "picture" : "images/ow.png",
+  "description" : "In a time of global crisis, an international task force of heroes banded together to restore peace to a war-torn world. This organization, known as Overwatch, ended the crisis and helped maintain peace for a generation, inspiring an era of exploration, innovation, and discovery.",
+  "stock" : "8",
+  "price" : "$59.99",
+  "button" : "2"
+},{
+  "title" : " Forza Horizon 3 ",
+  "picture" : "images/fh.png",
+  "description" : "Forza Horizon 3 is an open world racing video game developed by Playground Games and published by Microsoft Studios for Xbox One and Microsoft Windows. ... The game was released on 23 September 2016 for &rdquo;Ultimate Edition&rdquo; players, and 27 September 2016 for standard and &rdquo;Deluxe Edition&rdquo; players.",
+  "stock" : "3",
+  "price" : "$59.99",
+  "button" : "3"
+}
+];

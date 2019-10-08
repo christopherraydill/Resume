@@ -1,0 +1,377 @@
+<!doctype html>
+<html>
+	<head lang="en">
+		<!-- character encoding is utf eight -->
+    <meta charset="utf-8">
+    <!-- the description of this page -->
+    <meta name="description" content="Free Web tutorials">
+    <!-- keywords for search engine -->
+    <meta name="keywords" content="HTML,CSS,XML,JavaScriptS">
+    <!-- the authors name -->
+    <meta name="author" content="Dill Christopher">
+    <!-- refreshes page every ten minites -->
+    <meta http-equiv="refresh" content="600">
+    <!-- compatability with edge -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- sets the width of the page to follow the screen-width of the device and sets the initial zoom level when the page is first loaded by the browser -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- the title in the tab -->
+		<title>Introduction CD</title>
+
+		<!--
+			Web Dev 2 - shopping-cart.html
+			Filename: vue.html
+
+			Author:   Christopher Dill
+			Date:     12/14/2016
+			CIS 131 Web Development II
+		-->
+		<link rel="shortcut icon" href="images/visual_identity-logo-0.8.ico">
+		<link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
+		<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+		<script>var __adobewebfontsappname__="dreamweaver"</script>
+		<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+			<![endif]-->
+		<!-- click and show image -->
+		<script src="js.js" type="text/javascript"></script>
+		<!-- form validation/Address -->
+		<script src="jsssss.js" type="text/javascript"></script>
+		<!-- my toggle navigation/dropdown on click -->
+		<script src="jssssss.js" type="text/javascript"></script>
+		<!--jquery-->
+		<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+		<!--the json script-->
+		<script src="theJSONvue.json"></script>
+		<style>
+
+			#tableBox {
+				text-align: center;
+				margin: auto;
+			}
+
+			#showing {
+				background-color: #2D9AB7;
+				color: black;
+				padding-bottom: 25px;
+			}
+
+			#game1 {
+				text-align: center;
+				margin: auto;
+				border: 1px solid #ffffff;
+				color: #000000;
+				padding: 5px;
+			}
+
+			#heldCredit {
+				background-color: #00AFB2;
+				color: #ffffff;
+				font-size: 30px;
+			}
+
+			#theSizeOfTheTable {
+				width: 100%;
+			}
+
+			tr {
+				background-color: #00AFB2;
+			}
+
+			.theBackgroundOfColor {
+				background-color: #2D9AB7;
+				color: #ffffff;
+			}
+
+			.borderTrol {
+				border: 1px solid #00AFB2;
+			}
+
+			.theCostumSize {
+				width: 92%;
+				text-align: center;
+			}
+
+		</style>
+		<noscript>
+			JAVASCRIPT NOT FOUND
+		</noscript>
+	</head>
+
+	<body>
+		<!-- Main Container -->
+		<div class="container">
+		  <!-- Navigation -->
+			<header>
+				<a href="index.html">
+				<p class="logo"><img src="images/visual_identity-logo-0.8.png" alt="Christopher Ray Logo" width="30" class=""></p>
+				</a>
+				<nav>
+						<div id="theMainContent" class="dropdown">
+								<p class="dropbtn">MAIN CONTENT</p>
+								<div class="dropdown-content"><br />
+									<a href="index.html">HOME</a><br />
+									<a href="about.html">ABOUT</a><br />
+									<!-- <a href="">SUMMER FUN</a><br /> -->
+									<!-- <a href="">CONTACT</a><br /> -->
+								</div>
+						</div>
+						<div id="thePhoto" class="dropdown">
+								<p class="dropbtn">PHOTO GALLERY</p>
+								<div class="dropdown-content"><br />
+									<a href="photo-gallery.html">CLICK</a><br />
+									<a href="photo-gallery-with-timer.html">TIMER</a><br />
+									<a href="photo-gallery-with-a-timer-using-arrays-with-style.html">ARRAY/STYLE</a><br />
+								</div>
+						</div>
+						<div id="theRace" class="dropdown">
+								<p class="dropbtn">THE GREAT RACE</p>
+								<div class="dropdown-content"><br />
+									<a href="midterm.html">MIDTERM</a><br />
+									<a href="extra-credit.html">EXTRA CREDIT</a><br />
+
+								</div>
+						</div>
+						<div id="theForm" class="dropdown">
+								<p class="dropbtn">MY FORM AND ADDRESS BOOK</p>
+								<div class="dropdown-content"><br />
+									<a href="my-form.html">MY FORM VALIDATION</a><br />
+									<a href="address-book.html">MY ADDRESS BOOK</a><br />
+									<a href="address-book-plus-hide-equals-minus.html"> MY ADDRESS BOOK REVISITED </a><br />
+								</div>
+						</div>
+						<div id="theOther" class="dropdown">
+								<p class="dropbtn">OTHER</p>
+								<div class="dropdown-content"><br />
+									<a href="vue.html" id="selectedYa">SHOPPING CART</a><br />
+									<!-- <a href="techie-hobbies.html">MY TECHIE HOBBIES</a><br />
+									<a href="helping-hand.html">HELPING HAND</a><br /> -->
+								</div>
+						</div>
+				</nav>
+				<div class="theDisplay row">
+						<div id="" class="col-xs-12">
+								<button class="btn btn-default dropdown2" data-toggle="collapse" data-target="#demo">MAIN CONTENT
+								<div id="demo" class="collapse">
+									<a href="index.html">HOME</a><br />
+									<a href="about.html">ABOUT</a><br />
+									<!-- <a href="">SUMMER FUN</a><br /> -->
+									<!-- <a href="">CONTACT</a><br /> -->
+								</div>
+						</div>
+						<div id="" class="col-xs-12">
+								<button class="btn btn-default dropdown2" data-toggle="collapse" data-target="#demo2">PHOTO GALLERY
+								<div id="demo2" class="collapse"><br />
+									<a href="photo-gallery.html">CLICK</a><br />
+									<a href="photo-gallery-with-timer.html">TIMER</a><br />
+									<a href="photo-gallery-with-a-timer-using-arrays-with-style.html">ARRAY/STYLE</a><br />
+								</div>
+						</div>
+						<div id="" class="col-xs-12">
+								<button class="btn btn-default dropdown2" data-toggle="collapse" data-target="#demo3">THE GREAT RACE
+								<div id="demo3" class="collapse"><br />
+									<a href="midterm.html">MIDTERM</a><br />
+									<a href="extra-credit.html">EXTRA CREDIT</a><br />
+
+								</div>
+						</div>
+						<div id="" class="col-xs-12">
+								<button class="btn btn-default dropdown2" data-toggle="collapse" data-target="#demo4">MY FORM <br />AND<br /> ADDRESS BOOK
+								<div id="demo4" class="collapse"><br />
+									<a href="my-form.html">MY FORM<br />VALIDATION</a><br />
+									<a href="address-book.html">MY ADDRESS<br />BOOK</a><br />
+									<a href="address-book-plus-hide-equals-minus.html"> MY ADDRESS<br />BOOK <br /> REVISITED </a><br />
+								</div>
+						</div>
+						<div id="" class="col-xs-12">
+								<button class="btn btn-default dropdown2" data-toggle="collapse" data-target="#demo5">OTHER
+								<div id="demo5" class="collapse"><br />
+									<a href="vue.html">SHOPPING CART</a><br />
+									<!-- <a href="techie-hobbies.html">MY TECHIE HOBBIES</a><br />
+									<a href="helping-hand.html">HELPING HAND</a><br /> -->
+								</div>
+						</div>
+				</div>
+				<!-- 3.Primary CTA dropdown -->
+				<!--<div id="theTop" class="dropdown">
+					<div class="panel panel-default footer_banner theSizeWidth">
+						<p class="theTopButton dropbtn"><img src="images/blank1.png" alt="blank image" /><img src="images/blank1.png" alt="blank image" /><img src="images/blank1.png" alt="blank image" width="12.5" /><img src="images/blank1.png" alt="blank image" /><img src="images/redx.png" alt="red x image" /><img src="images/blank1.png" alt="blank image" /><img src="images/blank1.png" alt="blank image" width="12.5" /><img src="images/blank1.png" alt="blank image" /><img src="images/blank1.png" alt="blank image" /></p>
+						<div class="dropdown-content theMoveDown">
+							<a class="hero_header">FOR THE LATEST NEWS &amp; UPDATES</a>
+				      <a class=""><div class="button2 bg-primary">subscribe</div></a>
+						</div>
+					</div>
+				</div>-->
+		  </header>
+			<!-- Hero Section -->
+			<section class="hero" id="hero">
+				<h2 class="hero_header">CHRISTOPHER <span class="light">DILL</span></h2>
+				<p class="tagline">My Shopping Cart</p>
+			</section>
+			<footer id="veiwToSell" class="text-primary">
+				<div class="row" id="size2">
+						<article class="text-center col-xs-7 footer_column">
+							<h2 v-for="product in theProduct" v-if="product.button == 1">
+								<span v-if="product.button == 1"> {{ product.title }} </span>
+							</h2>
+								<p v-for="product in theProduct" v-if="product.button == 1">
+									<span><img v-bind:src="product.picture" v-bind:alt="product.title" width="400px" class="cards"/></span><br />
+									<span> {{product.description}} </span><br />
+								</p>
+								<h3 v-for="(item, index) in theProduct" v-if="item.button == 1">
+									In Stock: <span> {{stock1}} </span><span v-if="this.stock1 == 0"> 0 </span><br />
+									Price: $ <span> {{price1}} </span>
+								</h3>
+								<button @click="addToCart(1)">Add to Cart</button>
+						</article>
+						<article class="text-center col-xs-7 footer_column">
+							<h2 v-for="product in theProduct" v-if="product.button == 2">
+								<span v-if="product.button == 2"> {{ product.title }} </span>
+							</h2>
+								<p v-for="product in theProduct" v-if="product.button == 2">
+									<span><img v-bind:src="product.picture" v-bind:alt="product.title" width="400px" class="cards"/></span><br />
+									<span> {{product.description}} </span><br />
+								</p><br /><br />
+								<h3>
+									In Stock: <span> {{stock2}} </span><br />
+									Price: $ <span> {{price2}} </span>
+								</h3>
+								<button @click="addToCart(2)">Add to Cart</button>
+						</article>
+						<article class="text-center col-xs-7 footer_column">
+							<h2 v-for="product in theProduct" v-if="product.button == 3">
+								<span v-if="product.button == 3"> {{ product.title }} </span>
+							</h2>
+								<p v-for="product in theProduct" v-if="product.button == 3">
+									<span><img v-bind:src="product.picture" v-bind:alt="product.title" width="400px" class="cards"/></span><br />
+									<span> {{product.description}} </span><br />
+								</p><br />
+								<h3 v-for="(item, index) in theProduct" v-if="item.button == 3">
+									In Stock: <span> {{stock3}} </span><br />
+									Price: $ <span> {{price3}} </span>
+								</h3>
+								<button class="theCarse" @click="addToCart(3)">Add to Cart</button>
+						</article>
+				</div>
+			<article class="footer_column_top_img theBackgroundOfColor table-responsive" id="veiwToSell">
+				<table id="theSizeOfTheTable" class="table">
+					<thead>
+						<tr class="borderedYa">
+							<th>
+								<h3 class="text-center">Game</h3>
+							</th>
+							<th>
+								<h3 class="text-center">Price</h3>
+							</th>
+							<th>
+								<h3 class="text-center">Quantity</h3>
+							</th>
+							<th>
+								<h3 class="text-center">Total</h3>
+							</th>
+							<th>
+								<p><img src="images/blank1.png" alt="blank image" /></p>
+							</th>
+						</tr>
+						<tr v-if="inCart1 > 0">
+							<td>
+								<p>Uncharted 4: A Thief`s End</p>
+							</td>
+							<td>
+								<p>${{price1}}</p>
+							</td>
+							<td>
+								<p>{{inCart1}}</p>
+							</td>
+							<td>
+								<p>${{itemCostTotal1}}</p>
+							</td>
+							<td>
+								<p><img class="theCarse"  title="Clears all copies of Uncharted 4: A Thief's End out your cart" @click="takeAllFromCart(1)" src="images/redx.png" alt="red x image" /><p/>
+							</td>
+						</tr>
+						<tr v-if="inCart2 > 0">
+							<td>
+								<p>Overwatch</p>
+							</td>
+							<td>
+								<p>${{price2}}</p>
+							</td>
+							<td>
+								<p>{{inCart2}}</p>
+							</td>
+							<td>
+								<p>${{itemCostTotal2}}</p>
+							</td>
+							<td>
+								<p><img class="theCarse"  title="Clears all copies of Overwatch out your cart" @click="takeAllFromCart(2)" src="images/redx.png" alt="red x image" /><p/>
+							</td>
+						</tr>
+						<tr v-if="inCart3 > 0">
+							<td>
+								<p>Forza Horizon 3</p>
+							</td>
+							<td>
+								<p>${{price3}}</p>
+							</td>
+							<td>
+								<p>{{inCart3}}</p>
+							</td>
+							<td>
+								<p>${{itemCostTotal3}}</p>
+							</td>
+							<td>
+								<p><img class="theCarse"  title="Clears all copies of Forza Horizon 3 out your cart" @click="takeAllFromCart(3)" src="images/redx.png" alt="red x image" /><p/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="theCarse" title="Hello I'm a badge">Total Item's In Cart <span class="badge">{{totalNumberOfItems}}</span></p>
+							</td>
+							<td>
+								<p></p>
+							</td>
+							<td>
+								<p></p>
+							</td>
+							<td>
+								<p>${{totleCost}}</p>
+							</td>
+							<td>
+								<p><img class="theCarse" title="Clears your cart" @click="takeAllFromCart(4)" src="images/redx.png" alt="red x image" /><p/>
+							</td>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+					<tfoot>
+					</tfoot>
+				</table>
+			</article>
+			</footer>
+			<!-- Footer Section -->
+			<section class="footer_banner" id="contact">
+				<h2 class="hidden">Footer Banner Section </h2>
+				<p class="hero_header">FOR THE LATEST NEWS &amp; UPDATES</p>
+				<div class="button2" href="mailto:rayd1234567@gmail.com?Subject=Hello">email</div>
+				</section>
+				<!-- Copyrights Section -->
+				<div class="copyright">&copy;2016 - <strong>Christopher Dill</strong></div>
+			</div>
+
+		<!--vue.js-->
+		<script src="https://unpkg.com/vue/dist/vue.js"></script>
+		<!--vue script-->
+		<script src="jsssssss.js" type="text/javascript"></script>
+	</body>
+</html>

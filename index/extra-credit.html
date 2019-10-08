@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>The Great Race!</title>
+<!--
+        Web Dev 2 - Portfolio Image swapping page
+        Filename:
+
+        Author:   Joshua Ratliff
+        Date:     10/5/2016
+		    CIS 131 Web Development II
+-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/styles2.css">
+
+<script>
+//this allows for alternation in actions
+var switching = 0;
+
+//defines a speed for the racers.
+var speed = Math.floor(Math.random() * 20) + 1;
+
+//mario and peaches locations
+var marioLoc = 0;
+var peachLoc = 0;
+
+//smooth sailing helps smooth out them peach and marios driving out.
+var marioHeldPX = 0;
+var peachHeldPX = 0;
+
+//determins first place.
+var firstPlace;
+
+//onclick of the object with the function. it will alternate actions to ether start/stop the race.
+function swichGoImg() {
+	if (switching == 0) {
+		//on next click it will use the false statement in this function.
+		switching = 1;
+		//changes the img
+		document.getElementById("stoplight").src = "images/greatrace/stoplight/mariokart_stoplight_go.png";
+		//starts the race with startRace() firing every 6th of a second.
+		timerStart = setInterval(function() {startRace()}, 0006);
+	} else {
+		//on next click it will use the true statement in this function.
+		switching = 0;
+		//changes the img
+		document.getElementById("stoplight").src = "images/greatrace/stoplight/mariokart_stoplight_start.png";
+		//calls resetRace
+		resetRace();
+	}
+}
+
+//Resets the race.
+function resetRace(){
+	//this is a no no on this project!
+	//window.location.reload();
+
+	//hides the winner image
+	document.getElementById("winnerImg").style.display = "none";
+	//mario and peaches locations reset
+	marioLoc = 0;
+	peachLoc = 0;
+
+	//smooth sailing helps smooth out them peach and marios driving out. reset
+	marioHeldPX = 0;
+	peachHeldPX = 0;
+
+	//determins first place. reset
+	firstPlace = "";
+
+	//moves the images at the end of this code to start positions
+	document.getElementById("peach").style.left = peachLoc + "px";
+	document.getElementById("mario").style.left = marioLoc + "px";
+}
+
+//starts the race.
+function startRace() {
+
+		//adjusts the speed of mario and peach.
+		var theNeedForMoreSpeed1 = Math.floor((Math.random() * 10) + 1);
+		var theNeedForMoreSpeed2 = Math.floor((Math.random() * 10) + 1);
+
+			//checks if who is in front or in first place.
+			if (marioLoc > peachLoc) {
+				firstPlace = "mario";
+			} else {
+				firstPlace = "peach";
+			}
+
+			//move mario.
+			if (marioLoc >= "1700") {
+				//clear timerStart.
+				clearInterval(timerStart);
+				// if they tie then do all of this else keep moving.
+				if (marioLoc == peachLoc) {
+					if (firstPlace == "mario") {
+						//declare mario a winner.
+
+						//shows the winner text.
+						document.getElementById("theWinText").innerHTML = "The Winner Mario";
+						//displays the winner box.
+						document.getElementById("winnerImg").style.display = "block";
+						//sets the background image.
+						document.getElementById("winnerImg").style.backgroundColor = "blue";
+						//sets the text color.
+						document.getElementById("winnerImg").style.color = "red";
+						//changes the image to the winner image.
+						document.getElementById("swapImg").src = "images/greatrace/racers/mario.png";
+					}else {
+						//declare peach a winner.
+
+						//shows the winner text.
+						document.getElementById("theWinText").innerHTML = "The Winner Peach";
+						//displays the winner box.
+						document.getElementById("winnerImg").style.display = "block";
+						//sets the background image.
+						document.getElementById("winnerImg").style.backgroundColor = "pink";
+						//sets the text color.
+						document.getElementById("winnerImg").style.color = "white";
+						//changes the image to the winner image.
+						document.getElementById("swapImg").src = "images/greatrace/racers/peach.png";
+					}
+				} else {
+					//declare mario a winner.
+
+					//shows the winner text.
+					document.getElementById("theWinText").innerHTML = "The Winner Mario";
+					//displays the winner box.
+					document.getElementById("winnerImg").style.display = "block";
+					//sets the background image.
+					document.getElementById("winnerImg").style.backgroundColor = "blue";
+					//sets the text color.
+					document.getElementById("winnerImg").style.color = "red";
+					//changes the image to the winner image.
+					document.getElementById("swapImg").src = "images/greatrace/racers/mario.png";
+				}
+			} else {
+				//moves 1 pixle at a time and refills if empty.
+				if (marioHeldPX > 0) {
+					//random movement per 1 pixle.
+					marioLoc = marioLoc + theNeedForMoreSpeed1;
+					//takes a pixle away.
+					marioHeldPX = marioHeldPX - 1;
+				} else {
+					//refill speed.
+					marioHeldPX = speed;
+				}
+			}
+			//move peach.
+			if (peachLoc >= "1700") {
+				//clear timerStart
+				clearInterval(timerStart);
+				// if they tie then do all of this else keep moving.
+				if (marioLoc == peachLoc) {
+					if (firstPlace == "mario") {
+						//declare peach a winner
+
+						//shows the winner text.
+						document.getElementById("theWinText").innerHTML = "The Winner Peach";
+						//displays the winner box.
+						document.getElementById("winnerImg").style.display = "block";
+						//sets the background image.
+						document.getElementById("winnerImg").style.backgroundColor = "pink";
+						//sets the text color.
+						document.getElementById("winnerImg").style.color = "white";
+						//changes the image to the winner image.
+						document.getElementById("swapImg").src = "images/greatrace/racers/peach.png";
+					}else {
+						//declare mario a winner
+
+						//shows the winner text.
+						document.getElementById("theWinText").innerHTML = "The Winner Mario";
+						//displays the winner box.
+						document.getElementById("winnerImg").style.display = "block";
+						//sets the background image.
+						document.getElementById("winnerImg").style.backgroundColor = "blue";
+						//sets the text color.
+						document.getElementById("winnerImg").style.color = "red";
+						//changes the image to the winner image.
+						document.getElementById("swapImg").src = "images/greatrace/racers/mario.png";
+					}
+				} else {
+					//declare peach a winner
+
+					//shows the winner text.
+					document.getElementById("theWinText").innerHTML = "The Winner Peach";
+					//displays the winner box.
+					document.getElementById("winnerImg").style.display = "block";
+					//sets the background image.
+					document.getElementById("winnerImg").style.backgroundColor = "pink";
+					//sets the text color.
+					document.getElementById("winnerImg").style.color = "white";
+					//changes the image to the winner image.
+					document.getElementById("swapImg").src = "images/greatrace/racers/peach.png";
+				}
+			} else {
+				//moves 1 pixle at a time and refills if empty.
+				if (peachHeldPX > 0) {
+					//random movement per 1 pixle.
+					peachLoc = peachLoc + theNeedForMoreSpeed2;
+					//takes a pixle away.
+					peachHeldPX = peachHeldPX - 1;
+				} else {
+					//refills speed
+					peachHeldPX = speed;
+				}
+			}
+
+		//moves the images at the end of this code
+		document.getElementById("peach").style.left = peachLoc + "px";
+		document.getElementById("mario").style.left = marioLoc + "px";
+}
+</script>
+</head>
+  <body>
+		<header>
+			<h1>Josh's portfolio</h1>
+		</header>
+			<nav class="sitenavigation">
+				 <ul id="goHome">
+					 <li>
+						 <a href="index.html">Go To<br />Home</a>
+					 </li>
+				 </ul>
+			</nav>
+							 <span class="helper"></span>
+			<div class="stoplight">
+				<!--onclick swap image and start race.-->
+				<img class="stoplight" id="stoplight" OnClick="swichGoImg();" src="images/greatrace/stoplight/mariokart_stoplight_start.png" width="150px" height="150px" />
+			</div>
+			<h2 id="Countdown">Ready to race?</h2>
+			<p class="dummy"></p>
+			<p class="racers" id="racers">
+				<!--put ids on images to move them.-->
+				<img src="images/greatrace/racers/mario.png" id="mario" alt="mario" width="50px" height="50px"/>
+				 <span class="helper"></span>
+				<img src="images/greatrace/racers/peach.png" id="peach" alt="peach" width="50px" height="50px"/>
+			</p>
+			<!--in the css code it stops this from showing up untill the winner has been named.-->
+			<div id="winnerImg">
+				<h2 id="theWinText">Winner Text</h2>
+				<p><img src="images/greatrace/racers/mario.png" id="swapImg" OnClick="resetRace();" alt="mario" width="200px" height="200px"/></p>
+			</div>
+			<footer>
+				<!--on a final note there was a lot of these=";" all over the place and the was even one in your image for mario, which stoped the movement of the image.-->
+								 <span class="footerhelper"></span>
+				<p>website created by Joshua Ratliff &copy; 2016.</p>
+				<p>Mario characters and sprites belong to Nintendo</p>
+				<button type="button" onclick="startRace()">Race!</button>
+				<button type="button" onclick="resetRace()">Reset the race</button>
+			</footer>
+	</body>
+</html>
